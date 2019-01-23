@@ -1,0 +1,243 @@
+
+/*************** Al jazeera Arabic Font ********/
+@font-face {
+    font-family: "Al Jazeera";
+    src: url("../Fonts/Al-Jazeera-Arabic-Regular.ttf");
+    }
+
+@font-face {
+    font-family: "AlJazeeraa";
+    src: url("../Fonts/Aljazeera.ttf");
+}
+@font-face {
+    font-family: "AlJazeeraBold";
+    src: url("../Fonts/Al-Jazeera-Arabic-Bold.ttf");
+}
+@font-face {
+    font-family: "AlJazeeraLight";
+    src: url("../Fonts/Al-Jazeera-Arabic-Light.ttf");
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../Fonts/MyriadPro-Regular.otf");
+}
+/*****************************************************/
+
+body{
+direction: rtl;
+}
+img{
+    width:100%;
+}
+
+.heroSec{
+    padding:270px 120px 85px 0;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.heroSec form{
+    position: relative;
+    direction: ltr;
+    font-family: "Al Jazeera";
+    color:white;
+    width:340px;
+    padding:60px 35px;
+    background-color:rgba(0,0,0,.7);
+    position: relative;
+}
+.heroSec form p{
+    font-size:35px;
+}
+.heroSec form span{
+    font-size:24px;
+}
+.formControl{
+    background-color: rgba(255,255,255,.35);
+    border-radius: 5px;
+    width:100%;
+    margin-top:15px;
+border:0;
+padding:5px;
+}
+.sendHeroForm{
+    margin-top:15px;
+border-radius: 20px;
+background-color: #05aece;
+padding:8px 47px
+
+}
+.formControl::placeholder{
+font-size:14px;
+ font-family: "MyriadPro-Regular";
+ color:white;
+ padding:20px;
+
+}
+.Nameinput{
+    width:50%;
+}
+.countryInput{
+    width:40%;
+    margin-left:20px;
+}
+.Nameinput,.countryInput{
+    display: inline-block;
+}
+.whatsuphero{
+    width:90px;
+    position: absolute;
+    left:80px;
+    bottom: -205px;
+}
+.turkyimg{
+    width:150px;
+    position: absolute;
+    width: 150px;
+    position: absolute;
+    right: -87px;
+    top: -62px;
+}
+.turkyimg-mobile{
+    top:30px;
+    left:15px;
+    width: 150px;
+    position: absolute;
+    display: none;
+}
+/*********************market section **************************************/
+.marketsec{
+width:100%;
+background-color: #f9f9f9;
+border-top:10px white solid;
+padding: 50px 50px 100px 0;
+text-align: center;
+position: relative;
+height: auto;
+}
+.marketsec h2{
+    font-size: 52px;
+    font-family: "AlJazeeraBold";
+}
+.marketsec h2 span{
+    color:#a8be1a;
+}
+.marketTurkey{
+    position: absolute;
+    width:125px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(-50deg);
+    top:85px;
+    left:140px;
+}
+.istanbulProj{
+    height: 360px;
+    margin-top:100px;
+    width: 100%;
+position: relative;
+}
+.projectInfo
+{
+    position:absolute;
+   width:40%;
+}
+.projectInfo p{
+    text-align: right;
+    font-size: 24px;
+    color:#656b6f;
+    font-family: "Al Jazeera";
+    
+}
+
+.mallCarusel{
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 73% 0, 42% 100%, 0% 100%);
+    clip-path: polygon(0 0, 58% 0, 42% 30%, 0% 30%); 
+}
+.mallCarusel .item{
+    width:100%
+}
+.owl-carousel.owl-rtl .owl-item {
+    float: left;
+    width: 100%;
+}
+.readMore{
+    padding:7px 30px;
+    border-radius: 20px;
+    background-color:#05aece;
+    position: absolute;
+    right: 45%;
+    bottom:45px;
+}
+
+/*********************************************************************/
+.sliderSec{
+    width:100%;
+    position: relative;
+    padding:20px 0 10px;
+}
+.sliderCont{
+    position: relative;
+    border-radius: 10px;
+}
+.slider-Owl {
+    width:100%;
+}
+.item{
+    width:100%;
+}
+.sliderSec .turkyimg{
+    width:130px;
+    right: 30px;
+    top: 400px;
+}
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+/******************************/
+.locationTime{
+background-color: #aeaeae;
+width:100%;
+padding:75px 0;
+color:white;
+font-family: "AlJazeeraLight";
+}
+.locatTime{
+    float:right;
+    margin-right:80px;
+}
+.locationImg{
+    width:50px;
+    display: inline-block;
+}
+.locationInfo{
+    display: inline-block;
+}
+.locationInfo span{
+    font-size:30px;
+}
+/****************************************/
+@media (min-width: 768px) and (max-width: 1025px){
+    .heroSec{
+        padding:270px 120px 85px 0;
+    background-image: url("../img/header-mobile.png");
+    }
+    .heroSec form{
+        display: none;
+    }     
+    .turkyimg-mobile{
+        display: block;
+    }
+}
+@media (min-width: 351px) and (max-width: 767px){}
