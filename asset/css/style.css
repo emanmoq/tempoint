@@ -425,7 +425,76 @@ text-align: left;}
 
 /********************************************/
 @media (min-width: 768px) and (max-width: 1025px){
-
+    .heroSec{
+        position: relative;
+ height: 1200px;  
+  background-image: url("../img/header-mobile.png");
+  padding-top:450px;
+    }
+    .turkyimg{
+        right: -24px;
+        top: -105px
+    }
+    .marketTurkey {
+        top: 99px;
+        left: 101px;
+    }
+    .projectInfo p{
+        font-size: 20px;
+    }
+    .readMore{
+        bottom:5px;
+    }
+    .marketsec {
+        padding-bottom:7px;
+ 
+    }
+    .locatTime {
+    margin-right:10px;
+    margin-top:30px;
+    }
+    .firstRow .locatTime:nth-child(odd){
+        margin-left:91px ;}
+        .firstRow .locatTime:nth-child(even){
+            margin-left: 30px;
+        }
+        .secondRow .locatTime:nth-child(even){
+            margin-right: 30px !important;
+         }
+         .secondRow .locatTime:nth-child(odd){
+             margin-right:7px !important;}
+             .googlemab{
+                 margin:50px 0;
+             }
+             .contactSec form {
+                /* position: absolute; */
+                padding: 0;
+                width: 342px;
+                margin: 0 auto;
+                top: -75px;
+                text-align: center;
+            }
+            .contactSec .sendHeroForm{
+                bottom: -61px;
+                left: 34%;
+            }
+            .contactSec .turkyimgContact{
+                width:120px;
+                right:0;
+                top:20px;
+                z-index: 4;
+            }
+            .contactSec form p{
+                margin:0;
+                font-size :30px;
+                margin-right:55px;
+            }
+            .contactSec form span{
+                display: block;
+                margin-bottom: 60px;     
+                   margin-right:40px;
+           
+         }
 }
 @media (min-width: 351px) and (max-width: 767px){
 
