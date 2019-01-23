@@ -37,7 +37,7 @@ img{
     background-size: cover;
     height: auto;
 }
-.heroSec form{
+.heroSec form,.contactSec form{
     position: relative;
     direction: ltr;
     font-family: "Al Jazeera";
@@ -47,15 +47,15 @@ img{
     background-color:rgba(0,0,0,.7);
     position: relative;
 }
-.heroSec form p{
+.heroSec form p,.contactSec form p{
     font-size:35px;
 }
-.heroSec form span{
+.heroSec form span,.contactSec form span{
     font-size:24px;
 }
 .formControl{
     background-color: rgba(255,255,255,.35);
-    border-radius: 5px;
+    border-radius: 3px;
     width:100%;
     margin-top:15px;
 border:0;
@@ -89,7 +89,7 @@ font-size:14px;
     width:90px;
     position: absolute;
     left:80px;
-    bottom: -205px;
+    bottom: -150px;
 }
 .turkyimg{
     width:150px;
@@ -151,6 +151,7 @@ position: relative;
     
 }
 
+
 .mallCarusel{
     position: relative;
     -webkit-clip-path: polygon(0 0, 73% 0, 42% 100%, 0% 100%);
@@ -162,7 +163,41 @@ position: relative;
 .owl-carousel.owl-rtl .owl-item {
     float: left;
     width: 100%;
+
 }
+.owl-dots .owl-dot{
+    display: inline-block;
+}
+.owl-dots .owl-dot span{
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background:white;
+    display: block;
+    border-radius: 30px;
+}
+.owl-dot.active span{
+    background-color:#007fe4;
+  
+}
+.mallCarusel .owl-dots{
+    position: absolute;
+top:0;
+z-index: 3;
+
+}
+.slider-Owl .owl-dots{
+    position: absolute;
+    bottom: 50px;
+    right: 45%;
+
+}
+.owl-carousel .owl-nav .owl-next span, .owl-carousel .owl-nav .owl-prev span{
+    font-size:50px;
+    position: absolute;
+    top:50%;
+}
+
 .readMore{
     padding:7px 30px;
     border-radius: 20px;
@@ -206,6 +241,10 @@ position: relative;
     width: 12px;
 }
 /******************************/
+.location{
+    background-color: white;
+    width:100%;
+}
 .locationTime{
 background-color: #aeaeae;
 width:100%;
@@ -214,9 +253,16 @@ color:white;
 font-family: "AlJazeeraLight";
 }
 .locatTime{
-    float:right;
+    display: block;
+    float: right;
     margin-right:80px;
     margin-top:60px;
+}
+.locatTime:first-child{
+    margin-right:0;
+}
+.locatTime:last-child{
+    float:left;
 }
 .locationImg{
     width:50px;
@@ -229,7 +275,124 @@ font-family: "AlJazeeraLight";
 .locationInfo span{
     font-size:30px;
 }
+.locationDetails{
+    text-align: center;
+}
+.locationDetails h3{
+    color:#05aece;
+    font-size:48px;
+    font-family: "AlJazeeraBold";
+}
+.googlemab{
+    margin:50px;
+}
+
 /****************************************/
+.videoDetails{
+    width:100%;
+    position: relative;
+    height: 700px;
+}
+.videoDetails h3{
+    color:white;
+    font-size:52px;
+    font-family: "AlJazeeraBold";
+    position: absolute;
+    z-index: 9;
+    top: 77px;
+    left: 19%;
+}
+iframe{ 
+    width:100%;
+    height: 100%;
+}
+/********************************************/
+.contactSec{
+    padding-top:80px;
+position: relative;
+}
+.overlay{
+background-color: rgba(0,0,0,.39);
+width:100%;
+position: absolute;
+top:0;
+left:0;
+z-index: 3;
+height: 100%;
+}
+.contactSec form{
+background-color: transparent;
+text-align: right;
+width:420px;
+margin: 0 auto;
+margin-left: 313px;
+z-index: 3;
+}
+.handPassport{
+    position: absolute;
+    width:245px;
+    left:0;
+    bottom:0;
+
+    z-index: 1;
+    
+}
+.contactSec .formControl{
+    background-color: rgba(255,255,255,.35);}
+    .contactSec .countryInput{
+    margin-left:30px;
+}
+.contactSec .sendHeroForm {
+border:0;
+    padding: 5px 47px;
+    position: absolute;
+    bottom: 57px;
+    right: -127px;
+    z-index: 999;
+
+}
+.contactSec .turkyimgContact{
+    width: 150px;
+    position: absolute;
+    left: 1px;
+    top: 70px;
+}
+/***********************************************/
+.footer{
+    width:100%;
+    padding:25px 30px 40px 40px;
+    background-color: white;
+    direction: ltr;
+}
+.footerlogo{
+    float: left;
+
+    width:130px;
+    line-height: 100px;
+}
+.footerimg{
+    float: left;
+    margin-left: 30px;
+    width:220px;
+    line-height: 120px;
+
+}
+.footertext{
+    margin-left: 40px;
+    float: left;
+    font-size:15px;
+    color:#7198c1;
+    font-family: "MyriadPro-Regular";
+}
+.footertext span{display: block;
+margin-top:10px;
+text-align: left;}
+.footertext:last-child{
+    margin-left: 200px;
+    margin-top: 58px;
+}
+
+/********************************************/
 @media (min-width: 768px) and (max-width: 1025px){
     .heroSec{
         padding:270px 120px 85px 0;
