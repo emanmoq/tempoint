@@ -487,6 +487,7 @@ text-align: left;}
  }
  .slider-Owl .owl-dots{
      right:36%;
+     bottom:5px;
  }
  .googlemab{
         margin:0;
@@ -518,16 +519,23 @@ text-align: left;}
  }
  .locatTime{
      margin-right:0 !important;
-     margin-top:28px;
+     margin-top:5px;
  }
- .locatTime:nth-child(n){
-    justify-content: end !important;
+ .locationImg {
+     width:30px
  }
- .locatTime:nth-child(n+1){
-    justify-content:flex-end !important;
+ .firstRow .locatTime:nth-child(odd){
+margin-right:-100px !important;}
+.firstRow .locatTime:nth-child(even){
+    margin-right: 70px !important;
+ }
+ .secondRow .locatTime:nth-child(even){
+   margin-right: -100px !important;
 }
+.secondRow .locatTime:nth-child(odd){
+    margin-right:70px !important;}
  .locationTime{
-padding: 0;
+padding: 10px 0;
  }
  .marketsec h2{
 font-size: 34px;
@@ -544,4 +552,24 @@ margin-top:100px;
     transform: rotate(-37deg);
     top: 8px;
     right: 0;}
+    
+
+.footertext span {
+    text-align: center;
+
 }
+.footertext:last-child {
+    margin-left: 0;
+    margin-top: 30px;}
+    .sliderSec{
+        position: relative;
+        padding-top:80px;
+    }
+    .sliderSec .turkyimg{
+        width:150px;
+        z-index: 0;
+        top:0;
+        left:0;
+    }
+}
+
