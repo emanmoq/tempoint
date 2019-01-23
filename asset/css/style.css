@@ -569,7 +569,7 @@ margin-top:100px;
         width:150px;
         z-index: 0;
         top:0;
-        left:0;
+        right:210px;
     }
 }
 
