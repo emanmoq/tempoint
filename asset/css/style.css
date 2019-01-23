@@ -140,7 +140,7 @@ position: relative;
 }
 .projectInfo
 {
-    position:absolute;
+    float: right;
    width:40%;
 }
 .projectInfo p{
@@ -148,17 +148,20 @@ position: relative;
     font-size: 24px;
     color:#656b6f;
     font-family: "Al Jazeera";
-    
 }
-
-
+.carouselCont{
+    overflow: hidden;
+    height: 100%;
+    width:60%;
+    float: right;
+}
 .mallCarusel{
     position: relative;
     -webkit-clip-path: polygon(0 0, 73% 0, 42% 100%, 0% 100%);
-    clip-path: polygon(0 0, 58% 0, 42% 30%, 0% 30%); 
+    clip-path: polygon(0 0, 100% 0, 80% 75%, 0% 75%);
 }
 .mallCarusel .item{
-    width:100%
+    width:100%;
 }
 .owl-carousel.owl-rtl .owl-item {
     float: left;
@@ -182,8 +185,9 @@ position: relative;
 }
 .mallCarusel .owl-dots{
     position: absolute;
-top:0;
-z-index: 3;
+    top: 323px;
+    z-index: 3;
+    left: 36%;
 
 }
 .slider-Owl .owl-dots{
@@ -192,19 +196,44 @@ z-index: 3;
     right: 45%;
 
 }
-.owl-carousel .owl-nav .owl-next span, .owl-carousel .owl-nav .owl-prev span{
-    font-size:50px;
+.mallCarusel  .owl-nav .owl-next i, .mallCarusel  .owl-nav .owl-prev i,
+.slider-Owl  .owl-nav .owl-next i, .slider-Owl .owl-nav .owl-prev i{
+    color: white;
+    font-size: 30px;
     position: absolute;
-    top:50%;
+    top: 25%;
+}
+.owl-carousel .owl-nav .owl-next i:hover, .owl-carousel .owl-nav .owl-prev i:hover{
+    font-weight: bold;
+color: #007fe4;
 }
 
+.slider-Owl  .owl-nav .owl-next i, .slider-Owl  .owl-nav .owl-prev i {
+top:50%;
+}
+.mallCarusel  .owl-nav .owl-next i{
+    left:5px;
+}
+.mallCarusel .owl-nav .owl-prev i{
+    right:76px;
+
+}
+.slider-Owl .owl-nav .owl-next i{
+    left:5px;
+}
+.slider-Owl .owl-nav .owl-prev i{
+    right:5px;
+
+}
 .readMore{
+    border:0;
     padding:7px 30px;
     border-radius: 20px;
     background-color:#05aece;
     position: absolute;
-    right: 45%;
-    bottom:45px;
+    right: 33%;
+    bottom: -45px;
+
 }
 
 /*********************************************************************/
@@ -356,6 +385,7 @@ border:0;
     position: absolute;
     left: 1px;
     top: 70px;
+    z-index: 3;
 }
 /***********************************************/
 .footer{
@@ -394,6 +424,10 @@ text-align: left;}
 
 /********************************************/
 @media (min-width: 768px) and (max-width: 1025px){
+
+}
+@media (min-width: 351px) and (max-width: 767px){
+
     .heroSec{
         padding:270px 120px 85px 0;
     background-image: url("../img/header-mobile.png");
@@ -404,5 +438,47 @@ text-align: left;}
     .turkyimg-mobile{
         display: block;
     }
+    .contactSec{
+        padding-top:170px;
+    }
+    .contactSec form {
+        /* position: absolute; */
+        padding: 0;
+        width: 342px;
+        margin: 0 auto;
+        top: -150px;
+        text-align: center;
+    }
+    .contactSec .sendHeroForm{
+        bottom: -61px;
+        left: 34%;
+    }
+    .contactSec .turkyimgContact{
+        width:120px;
+        right:0;
+        top:20px;
+        z-index: 4;
+    }
+    .contactSec form p{
+        margin:0;
+        font-size :30px;
+        margin-right:55px;
+    }
+    .contactSec form span{
+        display: block;
+        margin-bottom: 60px;     
+           margin-right:40px;
+   
+ }
+ .footer .row{
+     justify-content: center;
+ }
+ .videoDetails h3{
+     font-size: 45px;
+     top: 55px;
+     left: 15%;
+ }
+ .slider-Owl .owl-dots{
+     right:36%;
+ }
 }
-@media (min-width: 351px) and (max-width: 767px){}

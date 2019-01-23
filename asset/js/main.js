@@ -6,6 +6,7 @@ $(document).ready(function () {
         loop: true,
         dots:true,
         nav:true,
+        navText: ["<i class='lni-chevron-right'></i>","<i class='lni-chevron-left'></i>"],
         responsiveClass: true,
         responsive: {
             0: {
@@ -13,12 +14,14 @@ $(document).ready(function () {
       
             }
           
-        },
+        }
+  
 
         
 });
 $('.slider-Owl').owlCarousel({
     autoplay: true,
+    navText: ["<i class='lni-chevron-right'></i>","<i class='lni-chevron-left'></i>"],
     rtl:true,
     loop: true,
     dots:true,
