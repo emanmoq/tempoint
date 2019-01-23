@@ -209,17 +209,19 @@ position: relative;
 .locationTime{
 background-color: #aeaeae;
 width:100%;
-padding:75px 0;
+padding:20px 0 80px 0;
 color:white;
 font-family: "AlJazeeraLight";
 }
 .locatTime{
     float:right;
     margin-right:80px;
+    margin-top:60px;
 }
 .locationImg{
     width:50px;
     display: inline-block;
+    margin-left:10px;
 }
 .locationInfo{
     display: inline-block;
