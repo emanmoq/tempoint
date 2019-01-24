@@ -88,9 +88,10 @@ font-size:14px;
 }
 .whatsuphero{
     width:90px;
-    position: absolute;
+    position: fixed;
     left:80px;
     bottom: 5px;
+    z-index: 999;
 }
 .turkyimg{
     width:150px;
